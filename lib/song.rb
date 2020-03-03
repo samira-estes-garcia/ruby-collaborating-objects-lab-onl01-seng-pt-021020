@@ -24,16 +24,4 @@ class Song
     song.artist.name = file_name.split(" - ")[1]
   end
   
-
-  def artist_name=(name)
-    if (self.artist.nil?)
-      self.artist = Artist.new(name)
-    else
-      self.artist.name = name
-    end
-  end
-
-  
-  
-  
 end
