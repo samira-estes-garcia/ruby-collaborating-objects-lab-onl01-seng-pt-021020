@@ -5,12 +5,9 @@ class MP3Importer
   def initialize(path)
     @path = path
   end
-  
+
   def files
-    Dir.entries(path).each do |filename|
-      @filenames << "#{filename}"
-    end
-    @filenames.delete_if {|x| x == "." || x == ".."}
+    @files ||= Dir.entries(@path).select {|song| !File.directory?(song) && song.end_with?(".mp3")}
   end
   
   def import
