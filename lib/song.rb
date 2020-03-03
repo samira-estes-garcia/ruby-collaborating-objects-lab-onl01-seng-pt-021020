@@ -8,7 +8,7 @@ class Song
     @name = name
     @artist = artist
     @file_name = file_name
-   #save
+   save
   end
   
  def save
