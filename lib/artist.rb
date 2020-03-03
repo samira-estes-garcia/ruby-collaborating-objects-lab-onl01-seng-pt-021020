@@ -18,7 +18,7 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    
+    if 
   end
   
   def self.all
