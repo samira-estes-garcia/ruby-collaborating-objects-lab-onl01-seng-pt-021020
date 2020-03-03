@@ -11,13 +11,13 @@ class Song
    #save
   end
   
- # def save
-  #  @@all << self
- # end
+ def save
+    @@all << self
+  end
   
-#  def self.all
-   # @@all
- # end
+  def self.all
+   @@all
+ end
   
   def self.new_by_filename(file_name)
     self.name = file_name.split(" - ")[0]
