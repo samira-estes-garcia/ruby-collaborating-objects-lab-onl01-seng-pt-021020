@@ -20,6 +20,7 @@ class MP3Importer
       Artist.find_or_create_by_name(artist_name)
       song = filename.split(" - ")[1]
       Artist.add_song(song)
+    end
   end
   
 end
